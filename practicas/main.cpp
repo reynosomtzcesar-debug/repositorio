@@ -1,21 +1,16 @@
-#include <iostream>
-#include "Ventilador.h"
-
-using namespace std;
+#include "Estudiante.h"   // Se incluye la clase Estudiante
 
 int main() {
-    Ventilador v;
 
-    v.encender();
-    v.subirVelocidad();
-    v.subirVelocidad();
-    v.mostrarEstado();
+    // Crear un objeto de la clase Estudiante
+    // Se envían los datos: nombre, matrícula y promedio
+    Estudiante alumno1("Cesar Reynoso", "A12345", 85);
 
-    v.bajarVelocidad();
-    v.mostrarEstado();
+    // Llamar al método para mostrar los datos del estudiante
+    alumno1.mostrarDatos();
 
-    v.apagar();
-    v.mostrarEstado();
+    // Llamar al método que verifica si aprobó o reprobó
+    alumno1.aprobo();
 
-    return 0;
+    return 0;   // Indica que el programa terminó correctamente
 }
